@@ -1,0 +1,43 @@
+<?xml version='1.0' encoding='UTF-8'?><!-- Published by JAX-WS RI at http://jax-ws.dev.java.net. RI's version is JAX-WS RI 2.2-hudson-740-. --><xs:schema xmlns:tns="http://wsandre/" xmlns:xs="http://www.w3.org/2001/XMLSchema" version="1.0" targetNamespace="http://wsandre/">
+
+<xs:element name="correntista" type="tns:correntista" />
+
+<xs:element name="correntistaResponse" type="tns:correntistaResponse" />
+
+<xs:element name="ted" type="tns:ted" />
+
+<xs:element name="tedResponse" type="tns:tedResponse" />
+
+<xs:complexType name="correntista">
+<xs:sequence>
+<xs:element name="codigo" type="xs:string" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="correntistaResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:objectC" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="objectC">
+<xs:sequence>
+<xs:element name="codigo" type="xs:string" minOccurs="0" />
+<xs:element name="nome" type="xs:string" minOccurs="0" />
+<xs:element name="valor" type="xs:double" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="ted">
+<xs:sequence>
+<xs:element name="codigo" type="xs:string" minOccurs="0" />
+<xs:element name="valor" type="xs:double" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="tedResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+</xs:schema>

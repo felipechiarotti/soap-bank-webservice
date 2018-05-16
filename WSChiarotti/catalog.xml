@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<catalog xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog" prefer="system">
+    <system systemId="file:/home/chiarotti/NetBeansProjects/WSChiarotti/wsdls/WSEduardo2.xml" uri="src/conf/xml-resources/web-services/WSEduardoClient/wsdl/WSEduardo2.xml.wsdl"/>
+</catalog>

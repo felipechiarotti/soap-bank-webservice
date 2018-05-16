@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<catalog xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog" prefer="system">
+    <system systemId="file:/home/chiarotti/NetBeansProjects/WSClient/wsdls/WSEduardo2.xml" uri="wsdl/WSEduardo2.xml.wsdl"/>
+    <system systemId="file:/home/chiarotti/NetBeansProjects/WSClient/wsdls/WSEduardo2.wsdl" uri="wsdl/WSEduardo2.wsdl"/>
+    <system systemId="file:/home/chiarotti/NetBeansProjects/WSClient/wsdls/WSChiarotti.wsdl" uri="wsdl/WSChiarotti.wsdl"/>
+    <system systemId="http://172.16.105.43:8080/WSBank/WSChiarotti?xsd=1" uri="wsdl/172.16.105.43_8080/WSBank/WSChiarotti.xsd_1.xsd"/>
+    <system systemId="http://localhost:8080/WSBank/WSChiarotti?xsd=1" uri="wsdl/localhost_8080/WSBank/WSChiarotti.xsd_1.xsd"/>
+    <system systemId="file:/home/chiarotti/NetBeansProjects/WSClient/wsdls/WSAndre.wsdl" uri="wsdl/WSAndre.wsdl"/>
+    <system systemId="http://192.168.100.172:8084/WSAndre/WSAndre?xsd=1" uri="wsdl/192.168.100.172_8084/WSAndre/WSAndre.xsd_1.xsd"/>
+    <system systemId="http://172.16.1.95:8084/WSAndre/WSAndre?xsd=1" uri="wsdl/172.16.1.95_8084/WSAndre/WSAndre.xsd_1.xsd"/>
+</catalog>

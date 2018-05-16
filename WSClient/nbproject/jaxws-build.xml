@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?><!--
+        *** GENERATED FROM jax-ws.xml - DO NOT EDIT !                             ***
+        *** TO MODIFY wsimport options USE Web Service node -> Edit WS Attributes ***
+        *** TO CHANGE TARGETS GENERATED TO jaxws-build.xml COPY THOSE             ***
+        *** TARGETS TO ../build.xml AND MODIFY THAT FILE INSTEAD                  ***
+
+        --><project xmlns:xalan="http://xml.apache.org/xslt" xmlns:j2seproject3="http://www.netbeans.org/ns/j2se-project/3" xmlns:jaxws="http://www.netbeans.org/ns/jax-ws/1">
+    <!--
+                ===================
+                JAX-WS WSIMPORT SECTION
+                ===================
+            -->
+    <target name="wsimport-init" depends="init">
+        <mkdir dir="${build.generated.sources.dir}/jax-ws"/>
+        <taskdef name="wsimport" classname="com.sun.tools.ws.ant.WsImport">
+            <classpath path="${libs.jaxws21.classpath}"/>
+        </taskdef>
+    </target>
+    <target name="wsimport-client-WSEduardo2" depends="wsimport-init">
+        <mkdir dir="${build.generated.dir}/jax-wsCache/WSEduardo2"/>
+        <property name="wsdl-WSEduardo2" location="xml-resources/web-service-references/WSEduardo2/wsdl/WSEduardo2.wsdl"/>
+        <wsimport sourcedestdir="${build.generated.dir}/jax-wsCache/WSEduardo2" destdir="${build.generated.dir}/jax-wsCache/WSEduardo2" wsdl="${wsdl-WSEduardo2}" catalog="catalog.xml" encoding="${source.encoding}" extension="true" verbose="true" fork="false" wsdlLocation="file:/home/chiarotti/NetBeansProjects/WSClient/wsdls/WSEduardo2.wsdl" xnocompile="true" xendorsed="true">
+            <depends file="${wsdl-WSEduardo2}"/>
+            <produces dir="${build.generated.dir}/jax-wsCache/WSEduardo2"/>
+        </wsimport>
+        <copy todir="${build.generated.sources.dir}/jax-ws">
+            <fileset dir="${build.generated.dir}/jax-wsCache/WSEduardo2">
+                <include name="**/*.java"/>
+            </fileset>
+        </copy>
+    </target>
+    <target name="wsimport-client-clean-WSEduardo2" depends="-init-project">
+        <delete dir="${build.generated.dir}/jax-wsCache/WSEduardo2"/>
+        <delete dir="${build.generated.sources.dir}/jax-ws/wseduardo"/>
+    </target>
+    <target name="wsimport-client-WSAndre" depends="wsimport-init">
+        <mkdir dir="${build.generated.dir}/jax-wsCache/WSAndre"/>
+        <property name="wsdl-WSAndre" location="xml-resources/web-service-references/WSAndre/wsdl/WSAndre.wsdl"/>
+        <wsimport sourcedestdir="${build.generated.dir}/jax-wsCache/WSAndre" destdir="${build.generated.dir}/jax-wsCache/WSAndre" wsdl="${wsdl-WSAndre}" catalog="catalog.xml" encoding="${source.encoding}" extension="true" verbose="true" fork="false" wsdlLocation="file:/home/chiarotti/NetBeansProjects/WSClient/wsdls/WSAndre.wsdl" xnocompile="true" xendorsed="true">
+            <depends file="${wsdl-WSAndre}"/>
+            <produces dir="${build.generated.dir}/jax-wsCache/WSAndre"/>
+        </wsimport>
+        <copy todir="${build.generated.sources.dir}/jax-ws">
+            <fileset dir="${build.generated.dir}/jax-wsCache/WSAndre">
+                <include name="**/*.java"/>
+            </fileset>
+        </copy>
+    </target>
+    <target name="wsimport-client-clean-WSAndre" depends="-init-project">
+        <delete dir="${build.generated.dir}/jax-wsCache/WSAndre"/>
+        <delete dir="${build.generated.sources.dir}/jax-ws/wsandre"/>
+    </target>
+    <target name="wsimport-client-WSChiarotti" depends="wsimport-init">
+        <mkdir dir="${build.generated.dir}/jax-wsCache/WSChiarotti"/>
+        <property name="wsdl-WSChiarotti" location="xml-resources/web-service-references/WSChiarotti/wsdl/WSChiarotti.wsdl"/>
+        <wsimport sourcedestdir="${build.generated.dir}/jax-wsCache/WSChiarotti" destdir="${build.generated.dir}/jax-wsCache/WSChiarotti" wsdl="${wsdl-WSChiarotti}" catalog="catalog.xml" encoding="${source.encoding}" extension="true" verbose="true" fork="false" wsdlLocation="file:/home/chiarotti/NetBeansProjects/WSClient/wsdls/WSChiarotti.wsdl" xnocompile="true" xendorsed="true">
+            <depends file="${wsdl-WSChiarotti}"/>
+            <produces dir="${build.generated.dir}/jax-wsCache/WSChiarotti"/>
+        </wsimport>
+        <copy todir="${build.generated.sources.dir}/jax-ws">
+            <fileset dir="${build.generated.dir}/jax-wsCache/WSChiarotti">
+                <include name="**/*.java"/>
+            </fileset>
+        </copy>
+    </target>
+    <target name="wsimport-client-clean-WSChiarotti" depends="-init-project">
+        <delete dir="${build.generated.dir}/jax-wsCache/WSChiarotti"/>
+        <delete dir="${build.generated.sources.dir}/jax-ws/wsbank/webservice"/>
+    </target>
+    <target name="wsimport-client-generate" depends="wsimport-client-WSEduardo2, wsimport-client-WSAndre, wsimport-client-WSChiarotti"/>
+</project>
